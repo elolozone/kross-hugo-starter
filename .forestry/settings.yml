@@ -5,6 +5,19 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: content directory
+  label: directory
+  create: all
+  match: "**/*"
+  templates:
+  - post
+- type: heading
+  label: heading
+- type: document
+  path: https://involvd.io
+  label: document
+  match: "**/*"
+- type: directory
   path: content/portfolio
   label: Portfolio
   create: none
